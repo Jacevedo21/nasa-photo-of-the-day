@@ -7,7 +7,7 @@ import Image from './Components/Image'
 function App() {
   const [data, setData] = useState([])
   useEffect(() => {
-    axios.get('https://api.nasa.gov/planetary/apod?api_key=u1C8MAdVRpgLgB1ZvwPB4FKk0DmTqDAoZhOmWghX')
+    axios.get('https://api.nasa.gov/planetary/apod?api_key=K6GY0nciVcyDcmrA6j0CsdtQGmeKPQC6bEZ2POYV')
     .then(res => {
       setData(res.data)
       console.log(res.data)
@@ -26,4 +26,4 @@ function App() {
 
 export default App;
 
-//https://api.nasa.gov/planetary/apod?api_key=u1C8MAdVRpgLgB1ZvwPB4FKk0DmTqDAoZhOmWghX
+//https://api.nasa.gov/planetary/apod?api_key=K6GY0nciVcyDcmrA6j0CsdtQGmeKPQC6bEZ2POYV
